@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>JQuery</title>
+	<meta charset = "UTF-8">
+	<link type = "text/css" rel = "stylesheet" href = "index.css">
+</head>
+<body>
+	
+		<div id = "left">
+			<h2>Left Content Area</h2>
+			<p>This area will contain the left content area.
+			   We will populate this area with images and text.  <b>This is also the first para</b>.
+			</p>
+			<p>This is the second para, however.
+			</p>
+		</div>
+		
+		<div id = "center">
+		<h2>Center Content Area</h2>
+		<ul>	
+				<li>Bob Cats</li>
+				<li>Wild Cats</li>
+				<li></li> <!--Empty li tag -->
+		</ul>
+			<p>This area will contain the center content area.
+			   This area will contain the main article.
+			</p>
+		</div>	
+		
+		<div id = "right">
+		<h2>Right Content Area</h2>
+			<p>This area will contain the right content area.
+			   We will populate this area with links and text.
+			</p>
+		</div>
+		
+		<div id = "test">
+		<button>Hit Button To Change Something</button>
+		</div>
+	
+<script src = "jquery-3.4.1.js"></script>
+<script> //JQuery "Ready-Function" at display here.
+	$(document).ready(function(){
+		
+		$("button").click(function(){
+		
+			//$("div:last").hide(); //In JQuery, code lines start with a "$".  The div:last will hide the button itself because the button is in the last div.  
+			//$("div:not(#test, #center)").hide(); //this code will not hide the test and center divs but will hide the rest.
+			//$("#left p:first").hide(); //Selecting the first desendent from the left div.
+			//$("div:even").hide();// This selects the even numbered divs in the document.
+			//$("p:contains('center')").hide();//This hides the paragraph containing the the word center.  This line showcases the 'contains' selector.
+			//$("div:has(b)").hide(); //This showcases the 'has'selector at the div level.
+			//$("p:has(b)").hide(); //This showcases the 'has' selector at the paragraph level.
+			//$("ul li:nth-child(2)").hide(); //This showcases the nth-child selector.
+			//$("body div:nth-child(3)").hide(); //Another example of the nth-child selector.
+			//$("li:empty").hide(); //This will hide the empty 'li' tag.
+			$("#left").css({"border" : "blue solid 5 px", "color":"turquoise"}); //Affecting multiple properties in a single line of code.  This is the demonstration of the css method hence the .css use in the code.
+			
+			
+			
+			
+		});
+	});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

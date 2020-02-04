@@ -1,0 +1,19 @@
+body{
+	padding: 10px;
+	margin: 15px;
+	border: 5px solid purple;
+	background-color: gray;
+	text-align: center;
+}
+.para2{
+	
+	background-color: orange;
+}
+/*
+#left{
+	text-align: left;
+}
+
+#right{
+	text-align: right;
+}*/
